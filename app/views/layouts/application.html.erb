@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DemoBlog</title>
+    <title>The Blog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -17,7 +17,7 @@
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <%= link_to 'Demo Blog Home Page' , root_path, class: "navbar-item" %>
+          <%= link_to 'HOME' , root_path, class: "navbar-item" %>
 
           <span class="navbar-burger" data-target="navbarMenuHeroA">
             <span></span>
@@ -27,7 +27,9 @@
         </div>
         <div id="navbarMenuHeroA" class="navbar-menu">
           <div class="navbar-end">
-            <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
+          <!--This creates string "Create Post with hyperlink && Sends user to "new_post_path" page -->
+            <%= link_to "Create Post", new_post_path, class:"navbar-item" %>
+            <%= link_to "Show Posts", posts_path, class:"navbar-item" %>
           </div>
         </div>
       </div>
@@ -48,7 +50,7 @@
     <nav class="tabs">
       <div class="container">
         <ul>
-
+          
         </ul>
       </div>
     </nav>
